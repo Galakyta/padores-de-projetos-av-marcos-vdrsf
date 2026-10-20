@@ -1,22 +1,22 @@
 package q2;
 
 
-public class Checkout {
+public class Matricular {
     private final Invoice invoice;
 
-    public Checkout(Invoice invoice) {
+    public Matricular(Invoice invoice) {
         this.invoice = invoice;
     }
 
  
 
-    public void finalizarPedido(double valor){
+    public void finalizarPedido(double valor, String identificador){
         
-        Etiqueta e = invoice.etiquetaGerada();
+        Comprovante e = invoice.comprovanteGerado(identificador);
         Pagamento p = invoice.pagamentoGerado(valor);
         DocFiscal d = invoice.docFiscalGerado();
 
-        System.out.println(e.imprimirEtiqueta());
+        System.out.println(e.imprimirComprovante());
         System.out.println(p.imprimirPagamento());
         System.out.println(d.imprimirDocFiscal());
          

@@ -1,8 +1,6 @@
 package q2;
-
-
-public interface Invoice {
-public Etiqueta etiquetaGerada();
-public Pagamento pagamentoGerado(double valor);
-public DocFiscal docFiscalGerado();
+public abstract class Invoice {
+public abstract  Comprovante comprovanteGerado(String identificador);
+public abstract Pagamento pagamentoGerado(double valor);
+public abstract DocFiscal docFiscalGerado();
 }
