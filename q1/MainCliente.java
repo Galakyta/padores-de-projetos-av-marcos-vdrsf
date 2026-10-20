@@ -1,6 +1,6 @@
-public class cliente {
+public class MainCliente {
 public static void main(String[] args) {
-    
+    //m v d r s f //meu nome abreviado
      factoryGerencia gerencia1 = new gerenciaAerea();
      factoryGerencia gerencia2 = new gerenciaFerroviaria();
      factoryGerencia gerencia3 = new gerenciaRodoviaria();
@@ -13,14 +13,9 @@ public static void main(String[] args) {
      passagem apolice2 = gerencia2.apoliceGerada(1000.00, "alone on your planet");
      passagem apolice3 = gerencia3.apoliceGerada(1000.00, "the haunt");
 
-     System.out.println(apolice1.calcularEmbarque());
-     System.out.println(apolice1.imprimirResumo());
-
-     System.out.println(apolice2.calcularEmbarque());
-     System.out.println(apolice2.imprimirResumo());
-
-     System.out.println(apolice3.calcularEmbarque());
-     System.out.println(apolice3.imprimirResumo());
+     gerencia1.resumo(apolice1);
+     gerencia2.resumo(apolice2);
+     gerencia3.resumo(apolice3);
 
      
 
