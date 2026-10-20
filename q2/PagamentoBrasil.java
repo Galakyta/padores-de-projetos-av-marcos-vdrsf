@@ -9,7 +9,7 @@ public class PagamentoBrasil extends Pagamento {
 
     @Override 
 public  String imprimirPagamento(){
-    double valorASerPago = (valor * 0.07);
+    double valorASerPago = (valor * 0.05);
     return "Valor a ser pago: " + valor + " com impostos: " + (valor + valorASerPago) + "Metodo de pagamento aceito: PIX ";
 }
 

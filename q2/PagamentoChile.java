@@ -10,7 +10,7 @@ public class PagamentoChile extends Pagamento {
 
     @Override 
 public  String imprimirPagamento(){
-    double valorASerPago = (valor * 0.23);
+    double valorASerPago = (valor * 0.19);
 return "Valor A ser pago: " + valor + " com impostos: " + (valor + valorASerPago) + "Metodo de pagamento aceito: Web Pay";
 }
 
