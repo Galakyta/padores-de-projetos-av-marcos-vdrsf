@@ -1,5 +1,5 @@
 public abstract class   factoryGerencia {
-public abstract passagem apoliceGerada(double valorDoCalculo, String nome);
+public abstract passagem passagemGerada(double valorDoCalculo, String nome);
 public final void resumo(passagem passagem){
     passagem viagemGerada = passagem;
 

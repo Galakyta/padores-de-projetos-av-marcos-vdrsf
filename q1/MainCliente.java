@@ -9,9 +9,9 @@ public static void main(String[] args) {
 
      //nn tira sarro de mim por ter deixado isso na consulta eu sempre esqueco 
 
-     passagem apolice1 = gerencia1.apoliceGerada(10000.00, "marcos");
-     passagem apolice2 = gerencia2.apoliceGerada(1000.00, "alone on your planet");
-     passagem apolice3 = gerencia3.apoliceGerada(1000.00, "the haunt");
+     passagem apolice1 = gerencia1.passagemGerada(10000.00, "marcos");
+     passagem apolice2 = gerencia2.passagemGerada(1000.00, "alone on your planet");
+     passagem apolice3 = gerencia3.passagemGerada(1000.00, "the haunt");
 
      gerencia1.resumo(apolice1);
      gerencia2.resumo(apolice2);
