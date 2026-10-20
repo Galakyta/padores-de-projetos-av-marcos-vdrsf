@@ -4,8 +4,8 @@ public class passagemFerroviaria extends passagem {
  //queria ir p morretes fim de ano
 
 
-    public passagemFerroviaria(double valorDoCalculo) {
-       super(valorDoCalculo);
+    public passagemFerroviaria(double valorDoCalculo, String nome) {
+       super(valorDoCalculo, nome);
         
     }
 @Override 
@@ -16,6 +16,6 @@ public double calcularEmbarque(){
 @Override 
 
 public  String imprimirResumo(){
-    return "TIPO DE PASSAGEM: FERROVARIA  // NOM DO PASSAGEIRO // RODOVIARIA VALOR DO EMBARQUE 5%: " + valorDoCalculo + " DOCUMENTOS EXIGIDOS:COMPROVANTE DE RESERVA DOC/C FOTO";
+    return "TIPO DE PASSAGEM: FERROVARIA  // NOM DO PASSAGEIRO:"+ nome +" // RODOVIARIA VALOR DO EMBARQUE 5%: " + valorDoCalculo + " DOCUMENTOS EXIGIDOS:COMPROVANTE DE RESERVA DOC/C FOTO";
 }
 }

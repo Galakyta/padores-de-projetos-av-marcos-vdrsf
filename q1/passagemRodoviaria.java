@@ -3,8 +3,8 @@ public class passagemRodoviaria extends passagem {
 
 
 
-    public passagemRodoviaria(double valorDoCalculo) {
-        super(valorDoCalculo);
+    public passagemRodoviaria(double valorDoCalculo, String nome) {
+        super(valorDoCalculo, nome);
     }
     //
 @Override 
@@ -15,6 +15,6 @@ public double calcularEmbarque(){
 @Override 
 
 public  String imprimirResumo(){
-    return "TIPO DE PASSAGEM: RODOVIARIA // NOM  DO PASSAGEIRO // VALOR DO EMBARQUE 3%: " + valorDoCalculo + " DOCUMENTOS EXIGIDOS: DOC/C FOTO";
+    return "TIPO DE PASSAGEM: RODOVIARIA // NOM  DO PASSAGEIRO:"+ nome +" // VALOR DO EMBARQUE 3%: " + valorDoCalculo + " DOCUMENTOS EXIGIDOS: DOC/C FOTO";
 }
 }

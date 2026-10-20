@@ -1,3 +1,3 @@
 public abstract interface  factoryGerencia {
-public abstract passagem apoliceGerada(double valorDoCalculo);
+public abstract passagem apoliceGerada(double valorDoCalculo, String nome);
 }
